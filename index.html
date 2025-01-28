@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="User Management Dahboard">
+    <meta name="keywords" content="HTML,CSS,Javascript">
+    <meta name="author" content="Jehova Nissi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management DASHBOARD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="x-icon" href="./favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 class="main-heading">USER MANGEMENT DASHBOARD</h1>
+        <button class="addButton" id="addUserBtn">Add New User</button>
+        <!-- Form to Add New User -->
+        <div class="form-container" id="formContainer">
+            <form id="userForm" class="form-user">
+                <div class="input-container">
+                    <label for="firstName" class="labeling">First Name:</label>
+                    <input class="input-style" type="text" id="firstName" name="firstName" placeholder="Enter your First Name">
+                    
+                    <label for="LastName" class="labeling">Last Name:</label>
+                    <input class="input-style" type="text" id="lastName" name="lastName" placeholder="Enter your last Name">
+                </div>
+                <div>
+                    <label for="email" class="labeling">Email Id:</label>
+                    <input class="input-style" type="text" id="email" name="email" placeholder="Enter your email Address">
+            
+                    <label for="userName" class="labeling">User Name:</label>
+                    <input class="input-style" type="text" id="userName" name="userName" placeholder="Enter your userName">
+                </div>
+                <div class="btn-container">
+                    <button class="save-btn" type="submit" id="saveBtn">Save!</button>
+                </div>
+                
+            </form>
+        </div>
+
+        <div id="messageContainer" class="message-container"></div>
+
+        <ul class="user-items" id="usersContainer">
+            <div class="header-row">
+                <h2>ID</h2>
+                <h2>Name</h2>
+                <h2>Email Id</h2>
+                <h2>userName</h2>
+                <h2>options</h2>
+            </div>
+        </ul>
+        <div class="user-items-2" id="userContainer2">
+            <h1 class="heading">Users List</h1>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+</body>
